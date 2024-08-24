@@ -1,0 +1,66 @@
+id_col: id
+random_state: 69
+read_columns:
+- addr_state
+- all_util
+- annual_inc
+- bc_open_to_buy
+- dti
+- emp_length
+- fico_range_high
+- fico_range_low
+- funded_amnt
+- funded_amnt_inv
+- grade
+- id
+- installment
+- issue_d
+- last_fico_range_high
+- last_fico_range_low
+- loan_amnt
+- loan_condition_int
+- mo_sin_old_rev_tl_op
+- num_rev_accts
+- num_rev_tl_bal_gt_0
+- open_il_12m
+- pct_tl_nvr_dlq
+- pub_rec_bankruptcies
+- revol_util
+- term
+- tot_cur_bal
+- total_acc
+roles:
+  category:
+  - addr_state
+  - grade
+  drop:
+  - issue_d
+  - id
+  numeric:
+  - all_util
+  - annual_inc
+  - bc_open_to_buy
+  - dti
+  - emp_length
+  - fico_range_high
+  - fico_range_low
+  - funded_amnt
+  - funded_amnt_inv
+  - installment
+  - last_fico_range_high
+  - last_fico_range_low
+  - loan_amnt
+  - mo_sin_old_rev_tl_op
+  - num_rev_accts
+  - num_rev_tl_bal_gt_0
+  - open_il_12m
+  - pct_tl_nvr_dlq
+  - pub_rec_bankruptcies
+  - revol_util
+  - term
+  - tot_cur_bal
+  - total_acc
+  target: loan_condition_int
+test_time_border: '2018-06-01'
+time_col: issue_d
+val_time_border: '2017-07-01'
